@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: hotchpotch-boot-service
+  ##数据库连接
+  datasource:
+    url: jdbc:mysql://192.168.3.39:3306/xinmall_oms
+    username: root
+    password: 930307
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    tomcat:
+#      max-active: 20
+#      max-idle: 8
+#      min-idle: 8
+#      initial-size: 10
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+  elasticsearch:
+    uris: 192.168.3.39:9200
+#spring:
+#  datasource:
+#    url: jdbc:mysql://192.168.3.39:3306/xinmall_oms?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+#    username: root
+#    password: 930307
+#    druid:
+#      initial-size: 5 #连接池初始化大小
+#      min-idle: 10 #最小空闲连接数
+#      max-active: 20 #最大连接数
+#      web-stat-filter:
+#        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+#      stat-view-servlet: #访问监控网页的登录用户名和密码
+#        login-username: druid
+#        login-password: druid
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  data:
+#    elasticsearch:
+#      repositories:
+#        enabled: true
+#  elasticsearch:
+#    uris: 192.168.3.39:9200
+
+logging:
+  level:
+    root: info
+    com.macro.mall: debug
+
+logstash:
+  host: localhost
+  enableInnerLog: false
