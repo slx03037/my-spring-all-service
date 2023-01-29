@@ -61,8 +61,16 @@ spring:
 #            merge-sql: false                                  # 合并多个连接池的监控数据，默认false
 
         #=======================================================================================
-
-
+management:
+  security:
+    enabled: false #关掉安全认证
+  port: 80
+  context-path: /monitor #actuator的访问路径
+endpoints:
+  shutdown:
+    enabled: true
+  beans:
+    id: instances
 
       # WebStatFilter配置
       web-stat-filter:

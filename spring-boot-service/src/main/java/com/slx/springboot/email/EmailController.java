@@ -1,4 +1,4 @@
-package com.slx.springboot.email.controller;
+package com.slx.springboot.email;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
