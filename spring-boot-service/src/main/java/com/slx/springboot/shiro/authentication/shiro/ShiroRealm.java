@@ -1,8 +1,7 @@
 package com.slx.springboot.shiro.authentication.shiro;
 
-import com.slx.springboot.common.repository.UserMapper;
-import com.slx.springboot.shiro.authentication.mapper.UserShiroMapper;
-import com.slx.springboot.shiro.authentication.pojo.UserShiro;
+import com.slx.springboot.common.mapper.UserShiroMapper;
+import com.slx.springboot.common.entity.UserShiro;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;

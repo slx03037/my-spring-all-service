@@ -27,7 +27,7 @@ public class GlobalDefaultExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     public CommonResult defaultErrorHandler(HttpServletRequest req, Exception e) {
         log.info("http的请求参数：{},异常原因，{}", new JSONObject(req).toString(),e.getMessage());
-        return new CommonResult(ResultCode.FAILED.getCode(),ResultCode.FAILED.getMessage());
+        return new CommonResult(ResultCode.FAILED.getCode(),ResultCode.FAILED.getMessage(),null);
     }
 
     @ExceptionHandler(UserNotExistException.class)

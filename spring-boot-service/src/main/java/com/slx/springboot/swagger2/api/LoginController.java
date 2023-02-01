@@ -36,7 +36,7 @@ public class LoginController {
     public BaseResponse<String> login(@RequestHeader(name="Content-Type", defaultValue = "application/json") String contentType,
                                       @ApiParam(value = "登录参数") @RequestBody LoginParam loginParam) {
         _logger.info("用户请求登录获取Token");
-        return new BaseResponse<>(true, "Login success", "JWT");
+        return new BaseResponse<>(true, "Login success", "jwt");
     }
 
     @ApiOperation(value = "推送消息登录认证接口", notes = "这里的密码是加密后的密码", produces = "application/json")
@@ -44,7 +44,7 @@ public class LoginController {
     public BaseResponse<String> notifyLogin(@RequestHeader(name="Content-Type", defaultValue = "application/json") String contentType,
                                             @ApiParam(value = "登录参数") @RequestBody LoginParam loginParam) {
         _logger.info("登录用户推送请求登录获取Token");
-        return new BaseResponse<>(true, "Login success", "JWT");
+        return new BaseResponse<>(true, "Login success", "jwt");
     }
 
     @GetMapping(path = "/401")

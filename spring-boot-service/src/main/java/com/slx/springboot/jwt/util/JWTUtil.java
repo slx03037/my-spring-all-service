@@ -1,7 +1,7 @@
 package com.slx.springboot.jwt.util;
 
 import lombok.extern.slf4j.Slf4j;
-//import com.auth0.jwt.JWT;
+//import com.auth0.jwt.jwt;
 //import com.auth0.jwt.JWTVerifier;
 //import com.auth0.jwt.algorithms.Algorithm;
 //import com.auth0.jwt.interfaces.DecodedJWT;
@@ -30,7 +30,7 @@ public class JWTUtil {
         //Date date = new Date(System.currentTimeMillis() + EXPIRE_TIME);
 //        Algorithm algorithm = Algorithm.HMAC256(secret);
 //        // 附带username信息
-//        return JWT.create()
+//        return jwt.create()
 //                .withClaim("username", username)
 //                .withExpiresAt(date)
 //                .sign(algorithm);
@@ -46,7 +46,7 @@ public class JWTUtil {
      */
     public static boolean verify(String token, String username, String secret) {
 //        Algorithm algorithm = Algorithm.HMAC256(secret);
-//        JWTVerifier verifier = JWT.require(algorithm)
+//        JWTVerifier verifier = jwt.require(algorithm)
 //                .withClaim("username", username)
 //                .build();
 //        DecodedJWT jwt = verifier.verify(token);
@@ -59,7 +59,7 @@ public class JWTUtil {
      * @return token中包含的用户名
      */
     public static String getUsername(String token) {
-//        DecodedJWT jwt = JWT.decode(token);
+//        DecodedJWT jwt = jwt.decode(token);
 //        return jwt.getClaim("username").asString();
         return "";
     }
