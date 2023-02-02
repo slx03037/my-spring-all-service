@@ -8,6 +8,7 @@
         <module>spring-common-service</module>
         <module>spring-elasticsearch-service</module>
         <module>spring-boot-service</module>
+        <module>spring-boot-websocket-socket</module>
     </modules>
 
     <groupId>com.shenlx.xinwen</groupId>
