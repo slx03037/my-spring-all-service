@@ -3,12 +3,14 @@ package com.shenlx.xinwen.springbootresttemplate.controller;
 import com.shenlx.xinwen.springbootresttemplate.model.BaseResponse;
 import com.shenlx.xinwen.springbootresttemplate.model.LoginParam;
 import com.shenlx.xinwen.springbootresttemplate.model.UnbindParam;
+import org.apache.http.Header;
+import org.eclipse.jetty.util.ajax.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.configurationprocessor.json.JSONObject;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @program: my-spring-all-service
@@ -25,7 +27,7 @@ public class LoginController {
     @PostMapping("/login")
     public BaseResponse<String> login(@RequestHeader(name = "Content-Type", defaultValue = "application/json") String contentType,
                                       @RequestBody LoginParam loginParam) {
-        _logger.info("用户请求登录获取Token");
+        _logger.info("用户请求登录获取Token：{},{}",contentType, loginParam);
         String username = loginParam.getUsername();
         String password = loginParam.getPassword();
         return new BaseResponse<>(true, "Login success", username + password);
@@ -34,8 +36,10 @@ public class LoginController {
     @PostMapping("/unbind")
     public BaseResponse<String> unbind(@RequestHeader(name = "Content-Type", defaultValue = "application/json") String contentType,
                                        @RequestHeader(name = "Authorization", defaultValue = "token") String token,
-                                       @RequestBody UnbindParam unbindParam) {
-        _logger.info("解绑通知接口start");
+                                       @RequestBody UnbindParam unbindParam,
+                                       HttpServletRequest request
+    ) {
+        _logger.info("解绑通知接口start,{},{},{},{}",contentType,token,unbindParam,JSONObject.wrap(request.getAttribute("id")) );
         String imei = unbindParam.getImei();
         String location = unbindParam.getLocation();
         return new BaseResponse<>(true, "解绑通知发送成功", "unbind");

@@ -1,5 +1,7 @@
 package com.shenlx.xinwen.springbootresttemplate.model;
 
+import java.io.Serializable;
+
 /**
  * @program: my-spring-all-service
  * @description:
@@ -7,7 +9,8 @@ package com.shenlx.xinwen.springbootresttemplate.model;
  * @create: 2023-02-02 21:44
  **/
 
-public class LoginParam {
+public class LoginParam implements Serializable {
+    private static final long serialVersionUID = -3241221362408437652L;
     /**
      * 用户名
      */

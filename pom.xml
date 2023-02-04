@@ -9,6 +9,8 @@
         <module>spring-elasticsearch-service</module>
         <module>spring-boot-service</module>
         <module>spring-boot-websocket-socket</module>
+        <module>spring-boot-resttemplate</module>
+        <module>spring-boot-schedule</module>
     </modules>
 
     <groupId>com.shenlx.xinwen</groupId>

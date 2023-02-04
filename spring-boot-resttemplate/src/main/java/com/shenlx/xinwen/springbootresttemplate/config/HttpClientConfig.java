@@ -1,6 +1,7 @@
 package com.shenlx.xinwen.springbootresttemplate.config;
 
 import com.shenlx.xinwen.springbootresttemplate.config.properties.HttpClientProperties;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HeaderElement;
 import org.apache.http.HeaderElementIterator;
 import org.apache.http.HttpResponse;
@@ -45,6 +46,7 @@ import java.util.concurrent.TimeUnit;
  **/
 @Configuration
 @EnableScheduling
+@Slf4j
 public class HttpClientConfig {
     private static final Logger LOGGER = LoggerFactory.getLogger(HttpClientConfig.class);
 
@@ -53,6 +55,7 @@ public class HttpClientConfig {
 
     @Bean
     public PoolingHttpClientConnectionManager poolingConnectionManager() {
+        log.info("poolingConnectionManager---------------");
         SSLContextBuilder builder = new SSLContextBuilder();
         try {
             builder.loadTrustMaterial(null, new TrustStrategy() {
@@ -81,11 +84,13 @@ public class HttpClientConfig {
         PoolingHttpClientConnectionManager poolingConnectionManager = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
         poolingConnectionManager.setMaxTotal(p.getMaxTotalConnections());  //最大连接数
         poolingConnectionManager.setDefaultMaxPerRoute(p.getDefaultMaxPerRoute());  //同路由并发数
+        log.info("poolingConnectionManager---------------{}",poolingConnectionManager);
         return poolingConnectionManager;
     }
 
     @Bean
     public ConnectionKeepAliveStrategy connectionKeepAliveStrategy() {
+        log.info("connectionKeepAliveStrategy---------------");
         return new ConnectionKeepAliveStrategy() {
             @Override
             public long getKeepAliveDuration(HttpResponse response, HttpContext httpContext) {
@@ -106,11 +111,12 @@ public class HttpClientConfig {
 
     @Bean
     public CloseableHttpClient httpClient() {
+        log.info("httpClient---------------");
         RequestConfig requestConfig = RequestConfig.custom()
                 .setConnectionRequestTimeout(p.getRequestTimeout())
                 .setConnectTimeout(p.getConnectTimeout())
                 .setSocketTimeout(p.getSocketTimeout()).build();
-
+        log.info("RequestConfig---------------{}",requestConfig);
         return HttpClients.custom()
                 .setDefaultRequestConfig(requestConfig)
                 .setConnectionManager(poolingConnectionManager())
@@ -142,9 +148,11 @@ public class HttpClientConfig {
 
     @Bean
     public TaskScheduler taskScheduler() {
+        log.info("ThreadPoolTaskScheduler---------------");
         ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
         scheduler.setThreadNamePrefix("poolScheduler");
         scheduler.setPoolSize(50);
+        log.info("ThreadPoolTaskScheduler---------------{}",scheduler);
         return scheduler;
     }
 }
