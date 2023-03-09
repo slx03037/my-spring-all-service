@@ -1,3 +1,4 @@
+## 应用的访问路径
 server:
   context-path: /web
 
@@ -8,9 +9,9 @@ spring:
     #driver-class-name: oracle.jdbc.driver.OracleDriver
     driver-class-name: com.mysql.cj.jdbc.Driver
     #url: jdbc:oracle:thin:@localhost:1521:ORCL
-    url: jdbc:mysql://192.168.3.39:3306/demo?serverTimezone=UTC&useSSL=false&autoReconnect=true&tinyInt1isBit=false&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://218.8.57.184:13326/auth-center?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: 930307
+    password: Gongzhongkj@2022
     druid:
       # 连接池配置
       initial-size: 5
