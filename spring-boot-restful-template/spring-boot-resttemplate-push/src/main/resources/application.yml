@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+system:
+  code:
+    auth-center: http://127.0.0.1:9555/sso-auth-center-vue
+    bi-platform: http://127.0.0.1:8086/bi-web
+    auth-psp: http://127.0.0.1:8080/SSO/ssoLogin
+    sys-client01: http://127.0.0.1:8801
+    sys-client02: http://127.0.0.1:8081

@@ -5,11 +5,9 @@
 
     <modules>
         <module>spring-boot-elasticsearch-service</module>
-        <module>spring-common-service</module>
         <module>spring-elasticsearch-service</module>
-        <module>spring-boot-service</module>
+        <module>spring-boot-all-service</module>
         <module>spring-boot-websocket-socket</module>
-        <module>spring-boot-resttemplate</module>
         <module>spring-boot-schedule</module>
     </modules>
 

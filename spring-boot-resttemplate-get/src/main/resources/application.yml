@@ -1,6 +1,0 @@
-server:
-  port: 8095
-
-spring:
-  application:
-    name: cloud-provider-service
