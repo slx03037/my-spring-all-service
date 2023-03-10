@@ -11,8 +11,9 @@
     </parent>
 
     <groupId>com.shenlx.xinwen</groupId>
-    <artifactId>spring-boot-schedule</artifactId>
+    <artifactId>spring-boot-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-config</name>
 
     <properties>
         <java.version>11</java.version>
