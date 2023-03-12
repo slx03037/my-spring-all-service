@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -10,24 +9,26 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-
     <groupId>com.shenlx.xinwen</groupId>
-    <artifactId>spring-boot-jdbc-template-multidatasource</artifactId>
+    <artifactId>spring-boot-mybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-jdbc-template-multidatasource</name>
+    <name>spring-boot-mybatis</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-
     <properties>
-        <java.version>11</java.version>
+        <mybatis.spring.boot.version>2.1.4</mybatis.spring.boot.version>
         <mysql-connector.version>8.0.29</mysql-connector.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -44,29 +45,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!--Mysql数据库驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-connector.version}</version>
         </dependency>
-
         <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>druid</artifactId>
-        <version>1.2.15</version>
-        <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-            <version>2.7.5</version>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid</artifactId>
             <version>1.2.15</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
