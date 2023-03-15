@@ -1,0 +1,12 @@
+2023-03-12 20:23:53.620  INFO 6760 --- [  restartedMain] com.shenlx.xinwen.springbootaop.SpringBootAopApplication:55  : Starting SpringBootAopApplication using Java 11.0.12 on shenlx-pc with PID 6760 (D:\workspace-github-project\my-spring-all-service\spring-boot-aop\target\classes started by lenovo in D:\workspace-github-project\my-spring-all-service)
+2023-03-12 20:23:53.620  INFO 6760 --- [  restartedMain] com.shenlx.xinwen.springbootaop.SpringBootAopApplication:634 : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 20:23:53.651  INFO 6760 --- [  restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-12 20:23:53.651  INFO 6760 --- [  restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-12 20:23:54.453  INFO 6760 --- [  restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8089 (http)
+2023-03-12 20:23:54.453  INFO 6760 --- [  restartedMain] org.apache.catalina.core.StandardService:173 : Starting service [Tomcat]
+2023-03-12 20:23:54.453  INFO 6760 --- [  restartedMain] org.apache.catalina.core.StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-12 20:23:54.500  INFO 6760 --- [  restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]:173 : Initializing Spring embedded WebApplicationContext
+2023-03-12 20:23:54.500  INFO 6760 --- [  restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292 : Root WebApplicationContext: initialization completed in 849 ms
+2023-03-12 20:23:54.973  INFO 6760 --- [  restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59  : LiveReload server is running on port 35729
+2023-03-12 20:23:55.005  INFO 6760 --- [  restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8089 (http) with context path '/api'
+2023-03-12 20:23:55.005  INFO 6760 --- [  restartedMain] com.shenlx.xinwen.springbootaop.SpringBootAopApplication:61  : Started SpringBootAopApplication in 1.884 seconds (JVM running for 2.93)

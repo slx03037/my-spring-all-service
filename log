@@ -1,0 +1,14 @@
+2023-03-12 20:23:53.620  INFO 6760 --- [restartedMain] c.s.x.s.SpringBootAopApplication         : Starting SpringBootAopApplication using Java 11.0.12 on shenlx-pc with PID 6760 (D:\workspace-github-project\my-spring-all-service\spring-boot-aop\target\classes started by lenovo in D:\workspace-github-project\my-spring-all-service)
+2023-03-12 20:23:53.620 DEBUG 6760 --- [restartedMain] c.s.x.s.SpringBootAopApplication         : Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-03-12 20:23:53.620  INFO 6760 --- [restartedMain] c.s.x.s.SpringBootAopApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 20:23:53.651  INFO 6760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-12 20:23:53.651  INFO 6760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-12 20:23:54.196 ERROR 6760 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.12] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2023-03-12 20:23:54.453  INFO 6760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2023-03-12 20:23:54.453  INFO 6760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 20:23:54.453  INFO 6760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-12 20:23:54.500  INFO 6760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-03-12 20:23:54.500  INFO 6760 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 849 ms
+2023-03-12 20:23:54.973  INFO 6760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-12 20:23:55.005  INFO 6760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path '/api'
+2023-03-12 20:23:55.005  INFO 6760 --- [restartedMain] c.s.x.s.SpringBootAopApplication         : Started SpringBootAopApplication in 1.884 seconds (JVM running for 2.93)
