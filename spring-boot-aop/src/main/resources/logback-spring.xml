@@ -7,7 +7,7 @@
     <springProperty scope="context" name="rootlevel" source="logging.level.root" />
     <springProperty scope="context" name="busilevel" source="logging.level.com.xncoding" />
     <!-- 日志存储路径 -->
-    <springProperty scope="context" name="logPath" source="logging.path" />
+    <springProperty scope="context" name="logPath" source="D:/logs/aop" />
     <!-- 普通日志 -->
     <appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${logPath}/info.log</file>
