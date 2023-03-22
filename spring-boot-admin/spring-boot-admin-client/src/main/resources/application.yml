@@ -1,0 +1,36 @@
+server:
+  port: 8098
+
+spring:
+  application:
+    name: admin-client
+  jmx:
+    enabled: true
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8097
+        instance:
+          name: true
+#          prefer-ip: true  #使用ip注册进来
+
+#  endpoints config
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
+      base-path: /manage
+  endpoint:
+    health:
+      show-details: always
+#    logfile:
+#      external-file: D:/logs/admin/info.log
+
+logging:
+  file:
+    name: 'springboot-admin-client-application.log'
+  pattern:
+    file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
+

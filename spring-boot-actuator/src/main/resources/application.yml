@@ -1,0 +1,45 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: SPRING-BOOT-ACTUATOR
+  security:
+    user:
+      name: admin
+      password: 123456
+
+management:
+  endpoints:
+    #web \u65F6\uFF08\u2018*\u2019\u4EE3\u8868\u6240\u6709\uFF09
+    web:
+      base-path: /manage
+      ##\u5B9E\u73B0\u8DE8\u57DF\u8BBF\u95EE
+      cors:
+        allowed-methods: 'GET,POST'  ###'*'
+        allowed-origins: '*'
+      exposure:
+        #exclude: 'env,beans' #\u8BBF\u95EE\u88AB\u62D2\u7EDD  \u8FD4\u56DE404
+        include: 'info,health,env,beans,date'
+        # include: '*'
+#    jmx:
+#      exposure:
+#        exclude: 'health,info,env,beans'
+
+
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+    env:
+      enabled: true
+    beans:
+      enabled: true
+    date:
+      enabled: true
+
+
+
+
+

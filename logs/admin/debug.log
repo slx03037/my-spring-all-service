@@ -1,0 +1,61 @@
+2023-03-22 14:52:22,936 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] StartupInfoLogger.java:55 - Starting SpringBootAdminClientApplication using Java 11.0.12 on shenlx-pc with PID 19464 (D:\workspace-github-project\my-spring-all-service\spring-boot-admin\spring-boot-admin-client\target\classes started by lenovo in D:\workspace-github-project\my-spring-all-service)
+2023-03-22 14:52:22,939 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] SpringApplication.java:634 - No active profile set, falling back to 1 default profile: "default"
+2023-03-22 14:52:22,993 [restartedMain] INFO  [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] DeferredLog.java:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-22 14:52:22,994 [restartedMain] INFO  [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] DeferredLog.java:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-22 14:52:23,682 [restartedMain] ERROR [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - An incompatible version [1.2.12] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2023-03-22 14:52:23,839 [restartedMain] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8098 (http)
+2023-03-22 14:52:23,846 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8098"]
+2023-03-22 14:52:23,846 [restartedMain] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-03-22 14:52:23,846 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-22 14:52:23,886 [restartedMain] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-03-22 14:52:23,887 [restartedMain] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:292 - Root WebApplicationContext: initialization completed in 892 ms
+2023-03-22 14:52:24,281 [restartedMain] WARN  [o.s.b.d.autoconfigure.OptionalLiveReloadServer] OptionalLiveReloadServer.java:62 - Unable to start LiveReload server
+2023-03-22 14:52:24,284 [restartedMain] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:58 - Exposing 15 endpoint(s) beneath base path '/manage'
+2023-03-22 14:52:24,303 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8098"]
+2023-03-22 14:52:24,317 [restartedMain] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8098 (http) with context path ''
+2023-03-22 14:52:24,331 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] StartupInfoLogger.java:61 - Started SpringBootAdminClientApplication in 1.792 seconds (JVM running for 2.539)
+2023-03-22 14:52:24,628 [registrationTask1] INFO  [d.c.b.a.client.registration.ApplicationRegistrator] DefaultApplicationRegistrator.java:82 - Application registered itself as ed6d38626fba
+2023-03-22 14:52:24,688 [http-nio-8098-exec-2] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-22 14:52:24,688 [http-nio-8098-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-03-22 14:52:24,690 [http-nio-8098-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 2 ms
+2023-03-22 14:53:15,989 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] StartupInfoLogger.java:55 - Starting SpringBootAdminClientApplication using Java 11.0.12 on shenlx-pc with PID 8588 (D:\workspace-github-project\my-spring-all-service\spring-boot-admin\spring-boot-admin-client\target\classes started by lenovo in D:\workspace-github-project\my-spring-all-service)
+2023-03-22 14:53:15,992 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] SpringApplication.java:634 - No active profile set, falling back to 1 default profile: "default"
+2023-03-22 14:53:16,047 [restartedMain] INFO  [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] DeferredLog.java:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-22 14:53:16,047 [restartedMain] INFO  [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] DeferredLog.java:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-22 14:53:16,745 [restartedMain] ERROR [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - An incompatible version [1.2.12] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2023-03-22 14:53:16,904 [restartedMain] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8098 (http)
+2023-03-22 14:53:16,912 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8098"]
+2023-03-22 14:53:16,913 [restartedMain] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-03-22 14:53:16,913 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-22 14:53:16,965 [restartedMain] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-03-22 14:53:16,965 [restartedMain] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:292 - Root WebApplicationContext: initialization completed in 916 ms
+2023-03-22 14:53:17,355 [restartedMain] WARN  [o.s.b.d.autoconfigure.OptionalLiveReloadServer] OptionalLiveReloadServer.java:62 - Unable to start LiveReload server
+2023-03-22 14:53:17,358 [restartedMain] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:58 - Exposing 15 endpoint(s) beneath base path '/manage'
+2023-03-22 14:53:17,377 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8098"]
+2023-03-22 14:53:17,390 [restartedMain] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8098 (http) with context path ''
+2023-03-22 14:53:17,403 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] StartupInfoLogger.java:61 - Started SpringBootAdminClientApplication in 1.845 seconds (JVM running for 2.57)
+2023-03-22 14:53:17,482 [registrationTask1] INFO  [d.c.b.a.client.registration.ApplicationRegistrator] DefaultApplicationRegistrator.java:82 - Application registered itself as ed6d38626fba
+2023-03-22 14:53:17,499 [http-nio-8098-exec-2] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-22 14:53:17,500 [http-nio-8098-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-03-22 14:53:17,501 [http-nio-8098-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 1 ms
+2023-03-22 15:56:45,351 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] StartupInfoLogger.java:55 - Starting SpringBootAdminClientApplication using Java 11.0.12 on shenlx-pc with PID 18456 (D:\workspace-github-project\my-spring-all-service\spring-boot-admin\spring-boot-admin-client\target\classes started by lenovo in D:\workspace-github-project\my-spring-all-service)
+2023-03-22 15:56:45,351 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] SpringApplication.java:634 - No active profile set, falling back to 1 default profile: "default"
+2023-03-22 15:56:45,399 [restartedMain] INFO  [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] DeferredLog.java:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-22 15:56:45,399 [restartedMain] INFO  [o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor] DeferredLog.java:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-22 15:56:46,095 [restartedMain] ERROR [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - An incompatible version [1.2.12] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2023-03-22 15:56:46,265 [restartedMain] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8098 (http)
+2023-03-22 15:56:46,267 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8098"]
+2023-03-22 15:56:46,267 [restartedMain] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-03-22 15:56:46,267 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-22 15:56:46,299 [restartedMain] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-03-22 15:56:46,299 [restartedMain] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:292 - Root WebApplicationContext: initialization completed in 884 ms
+2023-03-22 15:56:46,707 [restartedMain] WARN  [o.s.b.d.autoconfigure.OptionalLiveReloadServer] OptionalLiveReloadServer.java:62 - Unable to start LiveReload server
+2023-03-22 15:56:46,707 [restartedMain] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:58 - Exposing 15 endpoint(s) beneath base path '/manage'
+2023-03-22 15:56:46,722 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8098"]
+2023-03-22 15:56:46,738 [restartedMain] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8098 (http) with context path ''
+2023-03-22 15:56:46,753 [restartedMain] INFO  [c.s.x.s.SpringBootAdminClientApplication] StartupInfoLogger.java:61 - Started SpringBootAdminClientApplication in 1.807 seconds (JVM running for 2.541)
+2023-03-22 15:56:46,832 [registrationTask1] INFO  [d.c.b.a.client.registration.ApplicationRegistrator] DefaultApplicationRegistrator.java:82 - Application registered itself as ed6d38626fba
+2023-03-22 15:56:46,848 [http-nio-8098-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-22 15:56:46,848 [http-nio-8098-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-03-22 15:56:46,848 [http-nio-8098-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 0 ms
+2023-03-22 16:04:38,787 [registrationTask1] WARN  [d.c.b.a.client.registration.ApplicationRegistrator] DefaultApplicationRegistrator.java:91 - Failed to register application as Application(name=true, managementUrl=http://shenlx-pc:8098/manage, healthUrl=http://shenlx-pc:8098/manage/health, serviceUrl=http://shenlx-pc:8098/) at spring-boot-admin ([http://127.0.0.1:8097/instances]): I/O error on POST request for "http://127.0.0.1:8097/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
