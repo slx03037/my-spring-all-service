@@ -22,6 +22,9 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(timeInterceptor);
+        //不拦截的uri
+        final String[] commonExclude = {"/error", "/files/**"};
+        registry.addInterceptor(timeInterceptor).excludePathPatterns(commonExclude);
+        //registry.addInterceptor(timeInterceptor);
     }
 }

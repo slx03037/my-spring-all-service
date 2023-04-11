@@ -1,12 +1,11 @@
-package com.shenlx.xinwen.springbootfilter.config;
+package com.shenlx.xinwen.springbootfilter.filter;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
+import javax.servlet.FilterConfig;
 import java.io.IOException;
-import java.util.Date;
 
 /**
  * @program: my-spring-all-service
@@ -15,11 +14,11 @@ import java.util.Date;
  * @create: 2023-03-14 15:14
  **/
 @Slf4j
-@Configuration
+@Component
 public class TimeFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("过滤器初始化");
+        log.info("开始执行过滤器");
     }
 
     @Override
@@ -33,6 +32,10 @@ public class TimeFilter implements Filter {
 
     @Override
     public void destroy() {
-        System.out.println("过滤器销毁");
+
     }
+
+
+
+
 }

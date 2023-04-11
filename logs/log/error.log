@@ -1,0 +1,1 @@
+2023-04-01 13:26:18.468 [restartedMain-173] ERROR o.a.c.core.AprLifecycleListener 173 log - An incompatible version [1.2.12] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
