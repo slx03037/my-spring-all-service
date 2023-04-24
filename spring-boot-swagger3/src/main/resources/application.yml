@@ -1,0 +1,31 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8095
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher  #spring-boot version 2.7.5 版本较高 需要引入以下配置
+  swagger:
+    back:
+      groupName: '后台'
+      basePackage: 'com.shenlx.xinwen.springbootswagger3.controller'
+      title: 'swagger-back'
+      description: 'anyting possible'
+      contactName: 'shenlx'
+      contactEmail: 'shenlxxinwen@qq.com'
+      contactUrl: 'http://xxxxxx.com/'
+      version: '1.0'
+      enable: true
+    front:
+      groupName: '前台'
+      basePackage: 'com.shenlx.xinwen.springbootswagger3.controller'
+      title: 'swagger-front'
+      description: 'nothing impossible'
+      contactName: 'shenlx'
+      contactEmail: 'shenlxxinwen@qq.com'
+      contactUrl: 'http://xxxxxx.com/'
+      version: '1.0'
+      enable: true
+
