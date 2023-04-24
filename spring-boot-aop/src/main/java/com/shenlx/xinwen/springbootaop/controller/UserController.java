@@ -14,7 +14,7 @@ public class UserController {
 
     @RequestMapping("/first")
     public Object first() {
-        return "first controller";
+        return "first com.shenlx.xinwen.swagger2.api.controller";
     }
 
     @RequestMapping("/doError")
@@ -24,7 +24,7 @@ public class UserController {
 
     @RequestMapping("/second")
     public Object second() {
-        return "second controller";
+        return "second com.shenlx.xinwen.swagger2.api.controller";
     }
 
 }

@@ -1,4 +1,10 @@
 server:
   servlet:
-    context-path: api
+    context-path: /api
   port: 8094
+
+#spring-boot version 2.7.5 版本较高 需要引入以下配置
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

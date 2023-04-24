@@ -47,7 +47,7 @@ spring:
 ###################  mybatis-plus配置  ###################
 mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
-  typeAliasesPackage: com.shenlx.xinwen.springbootrediscache.domain
+  typeAliasesPackage: com.shenlx.xinwen.springbootrediscache.com.shenlx.xinwen.swagger2.api.domain
   global-config:
     id-type: 0  # 0:数据库ID自增   1:用户输入id  2:全局唯一id(IdWorker)  3:全局唯一ID(uuid)
     db-column-underline: false

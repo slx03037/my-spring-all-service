@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AspectController {
     @RequestMapping("/first")
     public Object first() {
-        return "first controller";
+        return "first com.shenlx.xinwen.swagger2.api.controller";
     }
 
     @RequestMapping("/doError")
@@ -25,6 +25,6 @@ public class AspectController {
     @RequestMapping("/second")
     @LogMark(desc = "second")
     public Object second() {
-        return "second controller";
+        return "second com.shenlx.xinwen.swagger2.api.controller";
     }
 }

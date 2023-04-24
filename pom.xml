@@ -48,7 +48,7 @@
         <aliyun-oss.version>2.5.0</aliyun-oss.version>
         <logstash-logback.version>7.2</logstash-logback.version>
         <minio.version>8.4.5</minio.version>
-        <jaxb-api.version>2.3.1</jaxb-api.version>
+        <jaxb-com.shenlx.xinwen.swagger2.api.version>2.3.1</jaxb-com.shenlx.xinwen.swagger2.api.version>
         <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
         <valid.version>3.0.0</valid.version>
         <mybatis.spring.boot.version>2.1.4</mybatis.spring.boot.version>
@@ -92,8 +92,8 @@
         <!--解决JDK 11 兼容性问题-->
         <dependency>
             <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-            <version>${jaxb-api.version}</version>
+            <artifactId>jaxb-com.shenlx.xinwen.swagger2.api</artifactId>
+            <version>${jaxb-com.shenlx.xinwen.swagger2.api.version}</version>
         </dependency>
     </dependencies>
 
@@ -146,7 +146,7 @@
             <!--valid验证参数-->
             <dependency>
                 <groupId>jakarta.validation</groupId>
-                <artifactId>jakarta.validation-api</artifactId>
+                <artifactId>jakarta.validation-com.shenlx.xinwen.swagger2.api</artifactId>
                 <version>${valid.version}</version>
             </dependency>
             <dependency>

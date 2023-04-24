@@ -35,7 +35,7 @@ public class SpringbootAspect {
     /**
      * 格式
      * execution(public * 包名.类名.方法名)
-     * com.slx.springboot.aop.controller
+     * com.slx.springboot.aop.com.shenlx.xinwen.swagger2.api.controller
      *
      * 切入点表达式的写法：
      *             关键字：execution(表达式)

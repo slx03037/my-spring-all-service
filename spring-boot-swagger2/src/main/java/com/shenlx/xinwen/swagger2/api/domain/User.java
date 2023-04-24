@@ -1,4 +1,4 @@
-package domain;
+package com.shenlx.xinwen.swagger2.api.domain;
 
 import lombok.Data;
 

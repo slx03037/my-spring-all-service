@@ -10,7 +10,7 @@
 2023-03-29 22:14:04.651 [restartedMain-629] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 629 prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42533dcb
 2023-03-29 22:14:04.675 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2023-03-29 22:14:04.695 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
-2023-03-29 22:14:04.779 [restartedMain-435] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner 435 scanCandidateComponents - Identified candidate component class: file [D:\workspace-github-project\my-spring-all-service\spring-boot-logback\target\classes\com\shenlx\xinwen\springbootlogback\controller\LogController.class]
+2023-03-29 22:14:04.779 [restartedMain-435] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner 435 scanCandidateComponents - Identified candidate component class: file [D:\workspace-github-project\my-spring-all-service\spring-boot-logback\target\classes\com\shenlx\xinwen\springbootlogback\com.shenlx.xinwen.swagger2.api.controller\LogController.class]
 2023-03-29 22:14:05.155 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
 2023-03-29 22:14:05.158 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
 2023-03-29 22:14:05.163 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
@@ -546,15 +546,15 @@ Negative matches:
 
    CassandraAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    CassandraDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    CassandraReactiveDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    CassandraReactiveRepositoriesAutoConfiguration:
       Did not match:
@@ -562,7 +562,7 @@ Negative matches:
 
    CassandraRepositoriesAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    ClientHttpConnectorAutoConfiguration:
       Did not match:
@@ -1190,22 +1190,22 @@ Unconditional classes:
 2023-03-29 22:15:04.133 [http-nio-8181-exec-1-542] DEBUG o.s.web.servlet.DispatcherServlet 542 initServletBean - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
 2023-03-29 22:15:04.133 [http-nio-8181-exec-1-547] INFO  o.s.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
 2023-03-29 22:15:04.139 [http-nio-8181-exec-1-119] DEBUG o.s.web.servlet.DispatcherServlet 119 traceDebug - GET "/test", parameters={}
-2023-03-29 22:15:04.143 [http-nio-8181-exec-1-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.controller.LogController#test()
+2023-03-29 22:15:04.143 [http-nio-8181-exec-1-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.com.shenlx.xinwen.swagger2.api.controller.LogController#test()
 2023-03-29 22:15:04.157 [http-nio-8181-exec-1-268] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 268 writeWithMessageConverters - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2023-03-29 22:15:04.157 [http-nio-8181-exec-1-119] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 119 traceDebug - Writing ["success"]
 2023-03-29 22:15:04.163 [http-nio-8181-exec-1-1131] DEBUG o.s.web.servlet.DispatcherServlet 1131 logResult - Completed 200 OK
 2023-03-29 22:15:37.879 [http-nio-8181-exec-3-119] DEBUG o.s.web.servlet.DispatcherServlet 119 traceDebug - GET "/test", parameters={}
-2023-03-29 22:15:37.879 [http-nio-8181-exec-3-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.controller.LogController#test()
+2023-03-29 22:15:37.879 [http-nio-8181-exec-3-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.com.shenlx.xinwen.swagger2.api.controller.LogController#test()
 2023-03-29 22:15:37.880 [http-nio-8181-exec-3-268] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 268 writeWithMessageConverters - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2023-03-29 22:15:37.880 [http-nio-8181-exec-3-119] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 119 traceDebug - Writing ["success"]
 2023-03-29 22:15:37.881 [http-nio-8181-exec-3-1131] DEBUG o.s.web.servlet.DispatcherServlet 1131 logResult - Completed 200 OK
 2023-03-29 22:16:17.824 [http-nio-8181-exec-4-119] DEBUG o.s.web.servlet.DispatcherServlet 119 traceDebug - GET "/error", parameters={}
-2023-03-29 22:16:17.826 [http-nio-8181-exec-4-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.controller.LogController#error()
+2023-03-29 22:16:17.826 [http-nio-8181-exec-4-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.com.shenlx.xinwen.swagger2.api.controller.LogController#error()
 2023-03-29 22:16:17.827 [http-nio-8181-exec-4-268] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 268 writeWithMessageConverters - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2023-03-29 22:16:17.827 [http-nio-8181-exec-4-119] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 119 traceDebug - Writing ["error"]
 2023-03-29 22:16:17.828 [http-nio-8181-exec-4-1131] DEBUG o.s.web.servlet.DispatcherServlet 1131 logResult - Completed 200 OK
 2023-03-29 22:16:30.741 [http-nio-8181-exec-6-119] DEBUG o.s.web.servlet.DispatcherServlet 119 traceDebug - GET "/error", parameters={}
-2023-03-29 22:16:30.741 [http-nio-8181-exec-6-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.controller.LogController#error()
+2023-03-29 22:16:30.741 [http-nio-8181-exec-6-522] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping 522 getHandler - Mapped to com.shenlx.xinwen.springbootlogback.com.shenlx.xinwen.swagger2.api.controller.LogController#error()
 2023-03-29 22:16:30.742 [http-nio-8181-exec-6-268] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 268 writeWithMessageConverters - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2023-03-29 22:16:30.742 [http-nio-8181-exec-6-119] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor 119 traceDebug - Writing ["error"]
 2023-03-29 22:16:30.742 [http-nio-8181-exec-6-1131] DEBUG o.s.web.servlet.DispatcherServlet 1131 logResult - Completed 200 OK

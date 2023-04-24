@@ -29,7 +29,7 @@ import java.util.Date;
         @ApiResponse(code = 500, message = "服务器出现异常")}
 )
 @RestController
-@RequestMapping(value = "/api/v1")
+@RequestMapping(value = "/com.shenlx.xinwen.swagger2.api/v1")
 @Slf4j
 public class PublicController {
     /**

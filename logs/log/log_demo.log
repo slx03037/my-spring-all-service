@@ -10,7 +10,7 @@
 2023-04-01 13:26:17.900 [restartedMain-629] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 629 prepareRefresh - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d6f8d17
 2023-04-01 13:26:17.924 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2023-04-01 13:26:17.935 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
-2023-04-01 13:26:17.985 [restartedMain-435] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner 435 scanCandidateComponents - Identified candidate component class: file [D:\workspace-github-project\my-spring-all-service\spring-boot-logback\target\classes\com\shenlx\xinwen\springbootlogback\controller\LogController.class]
+2023-04-01 13:26:17.985 [restartedMain-435] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner 435 scanCandidateComponents - Identified candidate component class: file [D:\workspace-github-project\my-spring-all-service\spring-boot-logback\target\classes\com\shenlx\xinwen\springbootlogback\com.shenlx.xinwen.swagger2.api.controller\LogController.class]
 2023-04-01 13:26:18.390 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
 2023-04-01 13:26:18.394 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
 2023-04-01 13:26:18.399 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
@@ -546,15 +546,15 @@ Negative matches:
 
    CassandraAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    CassandraDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    CassandraReactiveDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    CassandraReactiveRepositoriesAutoConfiguration:
       Did not match:
@@ -562,7 +562,7 @@ Negative matches:
 
    CassandraRepositoriesAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.com.shenlx.xinwen.swagger2.api.core.CqlSession' (OnClassCondition)
 
    ClientHttpConnectorAutoConfiguration:
       Did not match:

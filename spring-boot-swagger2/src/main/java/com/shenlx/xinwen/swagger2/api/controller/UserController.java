@@ -1,6 +1,6 @@
-package controller;
+package com.shenlx.xinwen.swagger2.api.controller;
 
-import domain.User;
+import com.shenlx.xinwen.swagger2.api.domain.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -45,7 +45,7 @@ public class UserController {
     @ApiOperation(value = "获取用户列表", notes = "获取用户列表")
     @GetMapping("/list")
     public @ResponseBody List<User> getUserList() {
-        List<User> list = new ArrayList<>();
+        List<User> list = new ArrayList<User>();
         User user1 = new User();
         user1.setId(1l);
         user1.setName("mrbird");
@@ -64,7 +64,7 @@ public class UserController {
     @PostMapping("/add")
     public @ResponseBody
     Map<String, Object> addUser(@RequestBody User user) {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<String, Object>();
         map.put("result", "success");
         return map;
     }
@@ -73,7 +73,7 @@ public class UserController {
     @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path")
     @DeleteMapping("/{id}")
     public @ResponseBody Map<String, Object> deleteUser(@PathVariable(value = "id") Long id) {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<String, Object>();
         map.put("result", "success");
         return map;
     }
@@ -84,7 +84,7 @@ public class UserController {
             @ApiImplicitParam(name = "user", value = "用户实体", required = true, dataType = "User") })
     @PutMapping("/{id}")
     public @ResponseBody Map<String, Object> updateUser(@PathVariable(value = "id") Long id, @RequestBody User user) {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<String, Object>();
         map.put("result", "success");
         return map;
     }

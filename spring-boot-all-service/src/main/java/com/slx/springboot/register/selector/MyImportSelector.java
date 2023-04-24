@@ -14,9 +14,9 @@ public class MyImportSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         return new String[]{
-                "cc.mrbird.demo.domain.Apple",
-                "cc.mrbird.demo.domain.Banana",
-                "cc.mrbird.demo.domain.Watermelon"
+                "cc.mrbird.demo.com.shenlx.xinwen.swagger2.api.domain.Apple",
+                "cc.mrbird.demo.com.shenlx.xinwen.swagger2.api.domain.Banana",
+                "cc.mrbird.demo.com.shenlx.xinwen.swagger2.api.domain.Watermelon"
         };
     }
 }

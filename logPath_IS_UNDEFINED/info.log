@@ -5,8 +5,8 @@
 2023-03-12 20:23:54.453  INFO 6760 --- [  restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8089 (http)
 2023-03-12 20:23:54.453  INFO 6760 --- [  restartedMain] org.apache.catalina.core.StandardService:173 : Starting service [Tomcat]
 2023-03-12 20:23:54.453  INFO 6760 --- [  restartedMain] org.apache.catalina.core.StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-12 20:23:54.500  INFO 6760 --- [  restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]:173 : Initializing Spring embedded WebApplicationContext
+2023-03-12 20:23:54.500  INFO 6760 --- [  restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/com.shenlx.xinwen.swagger2.api]:173 : Initializing Spring embedded WebApplicationContext
 2023-03-12 20:23:54.500  INFO 6760 --- [  restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292 : Root WebApplicationContext: initialization completed in 849 ms
 2023-03-12 20:23:54.973  INFO 6760 --- [  restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59  : LiveReload server is running on port 35729
-2023-03-12 20:23:55.005  INFO 6760 --- [  restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8089 (http) with context path '/api'
+2023-03-12 20:23:55.005  INFO 6760 --- [  restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8089 (http) with context path '/com.shenlx.xinwen.swagger2.api'
 2023-03-12 20:23:55.005  INFO 6760 --- [  restartedMain] com.shenlx.xinwen.springbootaop.SpringBootAopApplication:61  : Started SpringBootAopApplication in 1.884 seconds (JVM running for 2.93)
