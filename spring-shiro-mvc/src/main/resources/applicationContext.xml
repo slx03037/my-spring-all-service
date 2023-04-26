@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!--1. 配置 SecurityManager!-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <!--缓存管理器-->
+        <property name="cacheManager" ref="cacheManager"/>
+        <!--realms-->
+        <property name="realms">
+            <list>
+                <!--对于上面的多个realm的认证，你可以尝试两个地方使用不同的密码来进行测试，借助sysout的话你会发现确实经过了两个realm.-->
+                <ref bean="jdbcRealm"/>
+                <!--多个realm的配置
+                上面已经讲述过realm的定义方法了，所以这里主要讲怎么让Shiro知道这多个realm。
+                只需要把新的realm配置成bean，并告诉securityManager即可。-->
+                <ref bean="secondRealm"/>
+            </list>
+        </property>
+        <!--remember me 主要用于再次访问时仍然保留认证状态的场景。例如，离开某个网站后，两三天再打开仍然保留你的登录信息。
+        remember me的功能的一个前提是在认证时使用了setRememberMe
+
+        rememberme权限级别
+        记住我的权限并不是authc，而是user【用户已经身份验证/记住我】
+        所以做实验的要记得修改拦截器链。
+
+        参数设置
+        maxAge:过期时间
+        httpOnly:禁止使用js脚本读取到cookie信息
+       【其他的不太常用，有兴趣的自查。还有domain之类的】
+        一种配置方法
+
+        remember借助了cookie来实现记住登录状态，但这是不太安全的，因为（黑客）把cookie窃取了也能进行登录
+        -->
+        <property name="rememberMeManager" ref="rememberMeManager"/>
+
+        <!--第二种配置方法-->
+        <!--<property name="rememberMeManager.cookie.maxAge" value="15"/>-->
+    </bean>
+
+    <bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg value="rememberMe"/><!-- cookie的名称 -->
+        <property name="httpOnly" value="true"/>
+        <property name="maxAge" value="60"/><!-- 过期时间：60s -->
+    </bean>
+
+    <bean id="rememberMeManager"  class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <property name="cookie" ref="rememberMeCookie"/>
+    </bean>
+
+    <!--认证策略
+               对于多个realm的默认的认证策略是只要其中一个通过了即可认证通过，也就是说一个密码不匹配，一个密码匹配，最终的结果将会是认证通过。
+               这个认证策略是可以修改的，需要对authenticator认证器进行配置。
+                   1.FirstSuccessfulStrategy：只要有一个 Realm 验证成功即可，只返回第一个 Realm 身份验证成功的认证信息，其他的忽略；
+                   2.AtLeastOneSuccessfulStrategy：只要有一个 Realm 验证成功即可，和 FirstSuccessfulStrategy不同，返回所有 Realm 身份验证成功的认证信息；
+                   3.AllSuccessfulStrategy：所有 Realm 验证成功才算成功，且返回所有 Realm 身份验证成功的认证信息，如果有一个失败就失败了。
+                   可以在applicationContext.xml中配置authenticator来设置认证策略。
+               -->
+    <bean id="authenticator"
+          class="org.apache.shiro.authc.pam.ModularRealmAuthenticator">
+        <property name="authenticationStrategy">
+            <bean class="org.apache.shiro.authc.pam.AllSuccessfulStrategy"></bean>
+        </property>
+    </bean>
+
+    <!--2. 配置 CacheManager缓存管理器.-->
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <!--缓存配置文件（这里暂不涉及，可以随便拷贝一个）-->
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
+    </bean>
+
+    <!--3. 配置 Realm-->
+    <bean id="jdbcRealm" class="com.shenlx.xinwen.web.shiro.MyRealm">
+        <!--密码加密
+        在上面的密码比对中，都是使用明文来比对。
+        而通常来说，被存储起来的用户密码通常都是加密后的。也就是说，在使用SimpleAuthenticationInfo返回的认证信息时候，里面的密码信息是被加密过的
+        ，如果我们直接拿用户提交的明文密码匹配的话就会匹配失败，所以我们应该还需要告诉Shiro使用什么加密方式来进行密码比较。
+        在Shiro中，使用credentialsMatcher来解决这个问题。-->
+        <property name="credentialsMatcher">
+            <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+                <!--定义加密的算法-->
+                <property name="hashAlgorithmName" value="MD5"/>
+                <!--多重加密
+                密码加密一次后可以得到一串hash值，但还可以进行多次加密来提高安全性。-->
+                <!--定义加密的次数-->
+                <property name="hashIterations" value="1024"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="secondRealm" class="com.shenlx.xinwen.web.shiro.SecondRealm"/>
+
+
+    <!--4. 配置 LifecycleBeanPostProcessor，用来管理shiro一些bean的生命周期-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!--5. 启用shiro 的注解。但必须在配置了 LifecycleBeanPostProcessor 之后才可以使用-->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcessor"/>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <!--6. 配置 ShiroFilter.-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/login.jsp"/>
+        <property name="successUrl" value="/list.jsp"/>
+        <property name="unauthorizedUrl" value="/unauthorized.jsp"/>
+
+        <!--去掉filterChainDefinitions-->
+        <!--<property name="filterChainDefinitions">-->
+            <!--<value>-->
+                <!--/login.jsp = anon-->
+                <!--/shiro/login = anon-->
+                <!--/shiro/logout = logout-->
+                <!--/** = authc-->
+            <!--</value>-->
+        <!--</property>-->
+        <!--filterChainDefinitionMap替换filterChainDefinitions-->
+        <property name="filterChainDefinitionMap" value="filteChainMap"/>
+    </bean>
+    <!--核心是获取这个map，由于使用了静态工厂，所以这样定义这个bean-->
+    <bean id="filteChainMap"  class="com.shenlx.xinwen.web.filter.FilterChainMap" factory-method="getFilterChainMap" />
+</beans>

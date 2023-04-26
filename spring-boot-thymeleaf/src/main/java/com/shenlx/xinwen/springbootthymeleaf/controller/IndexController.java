@@ -1,11 +1,14 @@
 package com.shenlx.xinwen.springbootthymeleaf.controller;
 
 import com.shenlx.xinwen.springbootthymeleaf.bean.Account;
+import com.shenlx.xinwen.springbootthymeleaf.bean.User;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -14,9 +17,9 @@ import java.util.List;
  * @author: shenlx
  * @create: 2023-03-12 20:44
  **/
-@RestController
+@Controller
 public class IndexController {
-    @RequestMapping("/account")
+    @GetMapping("/account")
     public String index(Model m) {
         List<Account> list = new ArrayList<Account>();
         list.add(new Account("KangKang", "康康", "e10adc3949ba59abbe56e", "超级管理员", "17777777777"));
@@ -25,5 +28,17 @@ public class IndexController {
         list.add(new Account("Maria", "玛利亚", "e10adc3949ba59abbe56e", "清算人员", "19999999999"));
         m.addAttribute("accountList",list);
         return "account";
+    }
+
+    @GetMapping(value = "/user/1")
+    public String getUserById(Model model) {
+        User user1 = new User("Darcy", "password", 24, new Date(), Arrays.asList("Java", "GoLang"));
+        User user2 = new User("Chris", "password", 22, new Date(), Arrays.asList("Java", "Web"));
+        ArrayList<User> userList = new ArrayList<>();
+        userList.add(user1);
+        userList.add(user2);
+        model.addAttribute("userList", userList);
+        model.addAttribute("user", user1);
+        return "user";
     }
 }

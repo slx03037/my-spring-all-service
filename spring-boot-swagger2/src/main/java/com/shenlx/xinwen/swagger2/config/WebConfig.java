@@ -12,12 +12,12 @@ import java.text.SimpleDateFormat;
  * @author: shenlx
  * @create: 2023-03-21 11:10
  **/
-//@Configuration
-//public class WebConfig {
-////    @Bean
-////    public ObjectMapper getObjectMapper() {
-////        ObjectMapper mapper = new ObjectMapper();
-////        mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
-////        return mapper;
-////    }
-//}
+@Configuration
+public class WebConfig {
+//    @Bean
+//    public ObjectMapper getObjectMapper() {
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+//        return mapper;
+//    }
+}

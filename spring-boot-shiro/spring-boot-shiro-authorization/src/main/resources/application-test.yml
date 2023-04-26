@@ -1,0 +1,52 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /web
+
+spring:
+  application:
+    name: spring-boot-jdbc-template
+    # 数据库访问配置, 使用druid数据源
+  datasource:
+    url: jdbc:mysql://172.18.51.90:3310/auth_prod?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Neusoft@123
+    type: com.alibaba.druid.pool.DruidDataSource
+    # password: admin@2023
+#    proddb:
+#      url: jdbc:mysql://172.18.51.90:3310/auth_dev?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#      # url: jdbc:mysql://172.27.52.37:3306/sd_dev?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      username: root
+#      password: Neusoft@123
+#      # password: admin@2023
+#      type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      #连接池配置
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      #连接等待时间
+      max-wait: 30000
+      # 配置检测可以关闭的空闲连接间隔时间
+      time-between-eviction-runs-millis: 60000
+      # 配置连接在池中的最小生存时间
+      min-evictable-idle-time-millis: 300000
+      validation-query: select '1' from dual
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      max-pool-prepared-statement-per-connection-size: 20
+
+mybatis:
+  # type-aliases扫描路径
+  type-aliases-package: com.shenlx.xinwen.domain
+  # mapper xml实现扫描路径
+  mapper-locations: classpath:mapper/*.xml
+  property:
+    order: BEFORE
+
