@@ -21,6 +21,7 @@
         <module>spring-boot-shiro-remember-me</module>
         <module>spring-boot-shiro-common</module>
         <module>spring-boot-shiro-authorization</module>
+        <module>spring-boot-shiro-thymeleaf-tag</module>
     </modules>
 
     <properties>
