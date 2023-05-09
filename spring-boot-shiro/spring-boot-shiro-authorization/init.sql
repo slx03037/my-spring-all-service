@@ -7,9 +7,9 @@ CREATE TABLE T_PERMISSION (
 -- ----------------------------
 -- Records of T_PERMISSION
 -- ----------------------------
-INSERT INTO T_PERMISSION VALUES ('1', '/user', 'user:user');
-INSERT INTO T_PERMISSION VALUES ('2', '/user/add', 'user:add');
-INSERT INTO T_PERMISSION VALUES ('3', '/user/delete', 'user:delete');
+INSERT INTO T_PERMISSION VALUES ('1', '/userDO', 'userDO:userDO');
+INSERT INTO T_PERMISSION VALUES ('2', '/userDO/add', 'userDO:add');
+INSERT INTO T_PERMISSION VALUES ('3', '/userDO/delete', 'userDO:delete');
 -- ----------------------------
 -- Table structure for T_ROLE
 -- ----------------------------

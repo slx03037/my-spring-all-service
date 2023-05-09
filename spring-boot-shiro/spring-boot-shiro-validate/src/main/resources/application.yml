@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: test
+  thymeleaf:
+    enabled: true
+    cache: false
+    mode: HTML
+    prefix: "classpath:/templates/"
+    suffix: ".html"
+  mvc:
+    view:
+      prefix: /templates
+
+###################  自定义项目配置 ###################
+sf:
+  kaptcha-open: true #是否开启登录时验证码 (true/false)
+  session-open: false #是否开启session验证 (true/false)
+  session-invalidate-time: 7200 #session失效时间 单位：秒
+  session-validation-interval: 3600 #多久检测一次失效的session 单位：秒
+  heartbeat-timeout: 10 # 机具心跳报告超时时间 单位：分钟

@@ -24,7 +24,7 @@ https://www.cnblogs.com/progor/p/10970971.html
 <%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 
 <shiro:guest></shiro:guest>：当用户没进行认证时，显示标签中的内容。
-<shiro:user></shiro:user>：当用户进行认证了，显示标签中的内容。
+<shiro:userDO></shiro:userDO>：当用户进行认证了，显示标签中的内容。
 <shiro:authenticated></shiro:authenticated>：当用户已经认证时，显示标签中的内容。
 <shiro:notAuthenticated></shiro:notAuthenticated>：当用户未认证的时候显示标签中的内容（包括“remember me”的时候）
 <shiro:principal />:用来获取用户凭证(用户名等)(从AuthenticationInfo中获取)，标签所在的位置将被替换成凭证信息
@@ -42,9 +42,9 @@ https://www.cnblogs.com/progor/p/10970971.html
 </shiro:guest>
 
 <!-- 已登录过，准备切换其他用户的场景 -->
-<shiro:user>
+<shiro:userDO>
     Welcome back John!  Not John? Click <a href="login.jsp">here<a> to login.
-</shiro:user>
+</shiro:userDO>
 
 <!-- 显示登录用户的用户名的场景 -->
 Hello, <shiro:principal/>, how are you today?
@@ -60,7 +60,7 @@ Hello, <shiro:principal/>, how are you today?
 </shiro:hasRole>
 
 <!-- 拥有某个行为的场景 -->
-<shiro:hasPermission name="user:create">
+<shiro:hasPermission name="userDO:create">
     <a href="createUser.jsp">创建用户</a>
 </shiro:hasPermission>
 

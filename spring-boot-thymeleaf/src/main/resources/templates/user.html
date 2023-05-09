@@ -9,16 +9,16 @@
 
 <div>
     <p><b>Hello Thymeleaf Index</b></p>
-    用户名称：<input th:id="${user.username}" th:name="${user.username}" th:value="${user.username}">
+    用户名称：<input th:id="${userDO.username}" th:name="${userDO.username}" th:value="${userDO.username}">
     <br/>
-    用户技能：<input th:value="${user.skills}">
+    用户技能：<input th:value="${userDO.skills}">
     <br/>
-    用户年龄：<input th:value="${user.age}">
+    用户年龄：<input th:value="${userDO.age}">
     <br/>
-    用户生日：<input th:value="${#dates.format(user.birthday,'yyyy-MM-dd hh:mm:ss ')}">
+    用户生日：<input th:value="${#dates.format(userDO.birthday,'yyyy-MM-dd hh:mm:ss ')}">
 </div>
 
-<div th:object="${user}">
+<div th:object="${userDO}">
     <p><b>Hello Thymeleaf Index</b></p>
 
     用户名称：<input th:id="*{username}" th:name="*{username}" th:value="*{username}">
@@ -33,9 +33,9 @@
 <div>
     <p><b>Text 与 utext</b></p>
     <!-- th:text 显示HTML源码，作为字符串 -->
-    <span th:text="${user.username}">abc</span>
+    <span th:text="${userDO.username}">abc</span>
     <br>
-    <span th:utext="${user.username}">abc</span>
+    <span th:utext="${userDO.username}">abc</span>
 </div>
 
 <div>
@@ -45,7 +45,7 @@
 
 <div>
     <p><b>表单的使用</b></p>
-    <form th:action="@{/th/postform}" th:object="${user}" method="post">
+    <form th:action="@{/th/postform}" th:object="${userDO}" method="post">
         用户名称：<input type="text" th:field="*{username}">
         <br/>
         用户技能：<input type="text" th:field="*{skills}">
@@ -57,20 +57,20 @@
 
 <div>
     <p><b>判断的使用</b></p>
-    <div th:if="${user.age} == 18">18岁了</div>
-    <div th:if="${user.age} gt 18">大于18岁</div>
-    <div th:if="${user.age} lt 18">小于18岁</div>
-    <div th:if="${user.age} ge 18">大于等于</div>
-    <div th:if="${user.age} le 18">小于等于</div>
+    <div th:if="${userDO.age} == 18">18岁了</div>
+    <div th:if="${userDO.age} gt 18">大于18岁</div>
+    <div th:if="${userDO.age} lt 18">小于18岁</div>
+    <div th:if="${userDO.age} ge 18">大于等于</div>
+    <div th:if="${userDO.age} le 18">小于等于</div>
 </div>
 
 <div>
     <p><b>选择框</b></p>
     <select>
         <option>请选择一本书</option>
-        <option th:selected="${user.username eq 'admin'}">管理员</option>
-        <option th:selected="${user.username eq 'Darcy'}">Darcy</option>
-        <option th:selected="${user.username eq 'Chris'}">Chris</option>
+        <option th:selected="${userDO.username eq 'admin'}">管理员</option>
+        <option th:selected="${userDO.username eq 'Darcy'}">Darcy</option>
+        <option th:selected="${userDO.username eq 'Chris'}">Chris</option>
     </select>
 </div>
 
@@ -92,7 +92,7 @@
 
 <div>
     <p><b>Switch功能</b></p>
-    <div th:switch="${user.username}">
+    <div th:switch="${userDO.username}">
         <p th:case="'admin'">欢迎管理员</p>
     </div>
 </div>

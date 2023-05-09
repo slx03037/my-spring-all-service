@@ -22,15 +22,15 @@ CREATE TABLE `t_user` (
 INSERT INTO `t_user` VALUES (1,'admin','系统管理员','123456','www', '17890908889', '系统管理员', 1, '2017-12-12 09:46:12', '2017-12-12 09:46:12');
 INSERT INTO `t_user` VALUES (2,'aix','张三','123456','eee', '17859569358', '', 1, '2017-12-12 09:46:12', '2017-12-12 09:46:12');
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
+DROP TABLE IF EXISTS `userDO`;
+CREATE TABLE `userDO` (
     SNO VARCHAR(3) NOT NULL ,
     SNAME VARCHAR(9) NOT NULL ,
     SSEX VARCHAR(2) NOT NULL
 );
-INSERT INTO `user` VALUES ('001', 'KangKang', 'M ');
-INSERT INTO `user` VALUES ('002', 'Mike', 'M ');
-INSERT INTO `user` VALUES ('003', 'Jane', 'F ');
+INSERT INTO `userDO` VALUES ('001', 'KangKang', 'M ');
+INSERT INTO `userDO` VALUES ('002', 'Mike', 'M ');
+INSERT INTO `userDO` VALUES ('003', 'Jane', 'F ');
 
 -- -------------------------------------以下biz业务库开始-------------------------------------------
 CREATE DATABASE IF NOT EXISTS auth_prod default charset utf8 COLLATE utf8_general_ci;

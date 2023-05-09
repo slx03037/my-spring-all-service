@@ -22,6 +22,9 @@
         <module>spring-boot-shiro-common</module>
         <module>spring-boot-shiro-authorization</module>
         <module>spring-boot-shiro-thymeleaf-tag</module>
+        <module>spring-boot-jwt</module>
+        <module>spring-boot-jwt-cache</module>
+        <module>spring-boot-shiro-validate</module>
     </modules>
 
     <properties>
