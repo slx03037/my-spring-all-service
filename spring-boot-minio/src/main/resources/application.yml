@@ -28,6 +28,8 @@ spring:
 
 # MinIO 配置
 minio:
+#  endpoint: http://172.30.233.158:9001      # MinIO服务地址
+#  fileHost: http://172.30.233.158:9001      # 文件地址host
   endpoint: http://172.30.233.158:9001      # MinIO服务地址
   fileHost: http://172.30.233.158:9001      # 文件地址host
   bucketName: lz-iot                      # 存储桶bucket名称
