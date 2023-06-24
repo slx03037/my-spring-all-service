@@ -2,12 +2,9 @@ package com.shenlx.xinwen.minio.config;
 
 import com.shenlx.xinwen.minio.properties.MinioPropertiesConfig;
 import io.minio.MinioClient;
-import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 

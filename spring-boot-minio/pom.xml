@@ -2,6 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>spring-boot-first-minio</module>
+        <module>spring-boot-second-minio</module>
+    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -12,7 +16,7 @@
     <artifactId>spring-boot-minio</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-minio</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>

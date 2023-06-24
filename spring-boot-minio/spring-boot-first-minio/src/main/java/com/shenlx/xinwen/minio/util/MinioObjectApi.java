@@ -34,7 +34,7 @@ public class MinioObjectApi {
     @Resource
     private MinioClient minioClient;
 
-    @Value("${minio.operation-bucket}")
+    @Value("${minio.bucketName}")
     private String buckName;
 
     @SneakyThrows
