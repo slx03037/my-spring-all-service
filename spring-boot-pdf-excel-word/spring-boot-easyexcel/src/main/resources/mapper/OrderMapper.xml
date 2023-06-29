@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring.boot.easy.excel.mapper.OrderMapper">
+    <select id="getOrderlist" resultType="spring.boot.easy.excel.entity.OrderBO">
+  select
+  id ,
+  orderId ,
+  `address`,
+  `createTime`,
+  `productId` ,
+  `name`,
+  `subtitle` ,
+  `brandName` ,
+  `price` ,
+  `count`  from tbl_order
+    </select>
+</mapper>

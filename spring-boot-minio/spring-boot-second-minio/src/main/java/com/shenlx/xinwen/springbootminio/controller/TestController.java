@@ -1,6 +1,7 @@
 package com.shenlx.xinwen.springbootminio.controller;
 
 import com.shenlx.xinwen.springbootminio.model.ResultData;
+import com.shenlx.xinwen.springbootminio.service.MinioService;
 import com.shenlx.xinwen.springbootminio.utils.MinioUtil;
 import com.shenlx.xinwen.springbootminio.model.UploadResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.io.InputStream;
 
 /**
  * @program: my-spring-all-service
@@ -21,6 +24,8 @@ import org.springframework.web.multipart.MultipartFile;
 public class TestController {
     @Autowired
     private MinioUtil minioUtil;
+    @Autowired
+    private MinioService minioService;
 
     /**
      * @author: xx
@@ -56,4 +61,19 @@ public class TestController {
         }
         return ResultData.success(response);
     }
+
+    @PostMapping("uploadFile")
+    public ResultData uploadFile(@RequestParam(value = "file") MultipartFile file) {
+        UploadResponse response = new UploadResponse();
+        try {
+            String s = minioService.uploadFile(file);
+            response.setMinIoUrl(s);
+            response.setNginxUrl(s);
+        } catch (Exception e) {
+            log.error("上传失败",e);
+            return ResultData.error(e.getMessage());
+        }
+        return ResultData.success(response);
+    }
+
 }
