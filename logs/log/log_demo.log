@@ -161,11 +161,11 @@
 2023-04-01 13:26:18.981 [restartedMain-808] DEBUG o.s.b.f.s.DefaultListableBeanFactory 808 createArgumentArray - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
 2023-04-01 13:26:18.981 [restartedMain-808] DEBUG o.s.b.f.s.DefaultListableBeanFactory 808 createArgumentArray - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
 2023-04-01 13:26:18.981 [restartedMain-808] DEBUG o.s.b.f.s.DefaultListableBeanFactory 808 createArgumentArray - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-2023-04-01 13:26:18.996 [restartedMain-295] DEBUG _.s.w.s.HandlerMapping.Mappings 295 detectHandlerMethods - 
+2023-04-01 13:26:18.996 [restartedMain-295] DEBUG _.s.w.s.HandlerMapping.Mappings 295 detectHandlerMethods -
 	c.s.x.s.c.LogController:
 	{GET [/test]}: test()
 	{GET [/error]}: error()
-2023-04-01 13:26:18.998 [restartedMain-295] DEBUG _.s.w.s.HandlerMapping.Mappings 295 detectHandlerMethods - 
+2023-04-01 13:26:18.998 [restartedMain-295] DEBUG _.s.w.s.HandlerMapping.Mappings 295 detectHandlerMethods -
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
 	{ [/error]}: error(HttpServletRequest)
@@ -208,7 +208,7 @@
 2023-04-01 13:26:19.033 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
 2023-04-01 13:26:19.034 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
 2023-04-01 13:26:19.034 [restartedMain-808] DEBUG o.s.b.f.s.DefaultListableBeanFactory 808 createArgumentArray - Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
-2023-04-01 13:26:19.036 [restartedMain-131] DEBUG o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin 131 afterPropertiesSet - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2023-04-01 13:26:19.036 [restartedMain-131] DEBUG o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin 131 afterPropertiesSet - com.shenlx.xinwen.file.Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
 2023-04-01 13:26:19.037 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
 2023-04-01 13:26:19.037 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
 2023-04-01 13:26:19.037 [restartedMain-225] DEBUG o.s.b.f.s.DefaultListableBeanFactory 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
@@ -260,7 +260,7 @@
 2023-04-01 13:26:19.122 [restartedMain-184] DEBUG o.s.c.s.DefaultLifecycleProcessor 184 doStart - Successfully started bean 'webServerStartStop'
 2023-04-01 13:26:19.122 [restartedMain-352] DEBUG o.s.c.s.DefaultLifecycleProcessor 352 start - Starting beans in phase 2147483647
 2023-04-01 13:26:19.122 [restartedMain-184] DEBUG o.s.c.s.DefaultLifecycleProcessor 184 doStart - Successfully started bean 'webServerGracefulShutdown'
-2023-04-01 13:26:19.137 [restartedMain-126] DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener 126 logAutoConfigurationReport - 
+2023-04-01 13:26:19.137 [restartedMain-126] DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener 126 logAutoConfigurationReport -
 
 
 ============================
@@ -1175,12 +1175,12 @@ Unconditional classes:
 
 2023-04-01 13:26:19.143 [restartedMain-115] DEBUG o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver 115 logKeyFound - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
 2023-04-01 13:26:19.147 [restartedMain-61] INFO  c.s.x.s.SpringBootLogbackApplication 61 logStarted - Started SpringBootLogbackApplication in 1.707 seconds (JVM running for 3.455)
-2023-04-01 13:26:19.148 [restartedMain-77] DEBUG o.s.b.a.ApplicationAvailabilityBean 77 onApplicationEvent - Application availability state LivenessState changed to CORRECT
+2023-04-01 13:26:19.148 [restartedMain-77] DEBUG o.s.b.a.ApplicationAvailabilityBean 77 onApplicationEvent - com.shenlx.xinwen.file.Application availability state LivenessState changed to CORRECT
 2023-04-01 13:26:19.149 [restartedMain-252] DEBUG o.s.boot.devtools.restart.Restarter 252 logTo - Creating new Restarter for thread Thread[main,5,main]
 2023-04-01 13:26:19.150 [restartedMain-252] DEBUG o.s.boot.devtools.restart.Restarter 252 logTo - Immediately restarting application
 2023-04-01 13:26:19.150 [restartedMain-252] DEBUG o.s.boot.devtools.restart.Restarter 252 logTo - Starting application com.shenlx.xinwen.springbootlogback.SpringBootLogbackApplication with URLs [file:/D:/workspace-github-project/my-spring-all-service/spring-boot-logback/target/classes/]
-2023-04-01 13:26:19.150 [restartedMain-77] DEBUG o.s.b.a.ApplicationAvailabilityBean 77 onApplicationEvent - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2023-04-01 13:27:21.143 [SpringApplicationShutdownHook-77] DEBUG o.s.b.a.ApplicationAvailabilityBean 77 onApplicationEvent - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2023-04-01 13:26:19.150 [restartedMain-77] DEBUG o.s.b.a.ApplicationAvailabilityBean 77 onApplicationEvent - com.shenlx.xinwen.file.Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-04-01 13:27:21.143 [SpringApplicationShutdownHook-77] DEBUG o.s.b.a.ApplicationAvailabilityBean 77 onApplicationEvent - com.shenlx.xinwen.file.Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
 2023-04-01 13:27:21.144 [SpringApplicationShutdownHook-1049] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 1049 doClose - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d6f8d17, started on Sat Apr 01 13:26:17 CST 2023
 2023-04-01 13:27:21.144 [SpringApplicationShutdownHook-115] DEBUG o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver 115 logKeyFound - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
 2023-04-01 13:27:21.144 [SpringApplicationShutdownHook-365] DEBUG o.s.c.s.DefaultLifecycleProcessor 365 stop - Stopping beans in phase 2147483647

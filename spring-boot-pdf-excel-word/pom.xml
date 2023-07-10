@@ -4,6 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>spring-boot-easyexcel</module>
+        <module>spring-boot-download-upload</module>
+        <module>spring-boot-pdf-box</module>
+        <module>spring-boot-word-poi</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
