@@ -1,0 +1,159 @@
+172.30.233.151-测试环境服务器
+root/Wocloud#123
+http://172.30.233.151/resource/page/login.html  沙箱
+admin/Wocloud@2021
+dubbo:
+/data/service/lib
+nohup java -jar iot-service-resource-1.0-SNAPSHOT.jar  > /dev/null 2>&1 &
+
+tomcat:
+/data/tomcat/
+
+172.30.225.54-开发环境 
+root/6Ig.w+TEvO
+测试环境mysql:172.18.51.90
+http://172.30.225.54/resource/page/login.html 开发
+admin@uni     TfCnagvA#LRYZN1$sWqA
+/opt/service/lib  资源两个jar
+/opt/tomcat/apache-tomcat-7.0.96/webapps  war包
+
+开发测试数据库：
+资源测试resource4是开发库  resource5是测试库
+172.30.220.151 172.18.51.90 resource5  3309
+root Neusoft@123 
+
+172.18.51.9 mysql root 9En=QCj0w7
+172.18.51.10 mysql root 8oi*h.*@EW
+
+https://10.3.80.125/
+jc_shenlixin
+jc_shenlixin1
+
+号卡测试地址：
+日志地址：/data/tomcat/logs/oadmin   /data/service/logs/service-resource
+
+
+统一登陆平台
+账号：admin 密码：Unicom@162
+
+sys-client02  http://127.0.0.1:8181/res/login.html
+
+部件资源
+账号：admin 密码：Asiainfo0420@
+
+大屏
+堡垒机：
+https://10.3.80.125/# 
+jc_weihuceshi
+jc_weihuceshi1
+
+mysql 
+地址:172.27.52.37
+端口号:3306 
+用户:root   
+密码:admin@2023
+
+
+vpn 
+zhangyin
+Zying123!
+
+jcwb_yuhairui
+1qaz!QAZ
+
+15645102880_wo.cn
+6sJcPpriM8bz%hG
+
+数据库资源
+系统数据库  三个（账务和资源用的一个）
+172.30.225.162:3306/psp-dev
+db.username                  =root
+db.password                  =RCDAK!*e162
+生产支撑的
+ums_dev.url=jdbc:mysql://172.30.233.36:3306/ums 
+ums_dev.user=supSand
+ums_dev.password=sand@N123
+UMS的包含 部件资源和账管
+jdbc.s.url=jdbc:mysql://172.18.51.90:3310/admin
+jdbc.s.dbuser=root
+jdbc.s.dbpass=Neusoft@123
+号卡资源、统一门户的权限库系统数据库  三个（账务和资源用的一个）
+172.30.225.162:3306/psp-dev
+db.username                  =root
+db.password                  =RCDAK!*e162
+生产支撑的
+ums_dev.url=jdbc:mysql://172.30.233.36:3306/ums 
+ums_dev.user=supSand
+ums_dev.password=sand@N123
+UMS的包含 部件资源和账管
+jdbc.s.url=jdbc:mysql://172.18.51.90:3310/admin
+jdbc.s.dbuser=root
+jdbc.s.dbpass=Neusoft@123
+号卡资源、统一门户的权限库
+
+部件资源
+172.20.233.43
+root
+HAj5Q5tf
+
+
+elastic-job
+沙箱：http://172.30.233.45:8080/iot-scmp
+admin/qeAD13@
+172.30.233.45
+
+生产
+http://172.30.233.25:8080/iot-scmp/job/jobBack.html
+admin/qeAD13@
+
+https://10.3.80.125/#
+
+能开服务器
+adjust-check-hostName=10.124.164.106
+adjust-check-port=22
+adjust-check-userName=fwlwzguser
+adjust-check-passWord=7bF>6aQ#
+adjust-check-filePath=/upload
+测试文件地址：/data/sftp/acctsftp/check/sand
+
+服务器
+172.30.233.158
+deployer
+E5z2ddfQft#
+切换
+sudo i root 
+E5z2ddfQft#
+
+
+服务器信息
+172.30.233.158
+root:GD2F@U#CU3td
+
+mysql:adminSJY@123
+
+
+
+大屏
+业务IP
+
+管理IP
+
+172.27.51.157
+
+172.27.52.37
+
+2、账号及初始密码【初始密码请及时修改】
+
+deployer/Dd@20pLN#
+
+
+172.30.233.43 root
+HAj5Q5tf
+
+vpn信息
+https://www.kdocs.cn/l/crKYYrBixOG5
+
+gongnn
+Chan2648139262!
+  
+	
