@@ -7,6 +7,8 @@
         <module>spring-boot-download-upload</module>
         <module>spring-boot-pdf-box</module>
         <module>spring-boot-word-poi</module>
+        <module>spring-boot-word-poi-tl</module>
+        <module>spring-boot-excel-easypoi</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

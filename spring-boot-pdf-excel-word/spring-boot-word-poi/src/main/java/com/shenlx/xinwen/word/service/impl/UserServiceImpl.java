@@ -83,7 +83,7 @@ public class UserServiceImpl implements IUserService {
         InputStream stream = null;
         try {
             XWPFParagraph paragraph2 = doc.createParagraph();
-            Resource resource = new ClassPathResource("pdai-guli.png");
+            Resource resource = new ClassPathResource("1.jpeg");
             stream = new FileInputStream(resource.getFile());
             XWPFRun run = paragraph2.createRun();
             run.addPicture(stream, Document.PICTURE_TYPE_PNG, "Generated", Units.toEMU(256), Units.toEMU(256));
@@ -132,7 +132,7 @@ public class UserServiceImpl implements IUserService {
         List<User> userList = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             userList.add(User.builder()
-                    .id(Long.parseLong(i + "")).userName("pdai" + i).email("pdai@pdai.tech" + i).phoneNumber(121231231231L)
+                    .id(Long.parseLong(i + "")).userName("shenlx" + i).email("wwww.baidu.com" + i).phoneNumber(121231231231L)
                     .description("hello world" + i)
                     .build());
         }
