@@ -3,7 +3,7 @@ package com.shenlx.xinwen.report.utils;
 import com.deepoove.poi.XWPFTemplate;
 import com.shenlx.xinwen.report.config.GenerateWordFactory;
 import com.shenlx.xinwen.report.model.LabelData;
-import com.shenlx.xinwen.report.service.GenerateWord;
+import com.shenlx.xinwen.report.manage.GenerateWord;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;

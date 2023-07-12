@@ -1,4 +1,4 @@
-package com.shenlx.xinwen.report.service;
+package com.shenlx.xinwen.report.manage;
 
 import com.shenlx.xinwen.report.model.LabelData;
 

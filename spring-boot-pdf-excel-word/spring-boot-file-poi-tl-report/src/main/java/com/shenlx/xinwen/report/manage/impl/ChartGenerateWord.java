@@ -1,4 +1,4 @@
-package com.shenlx.xinwen.report.service.impl;
+package com.shenlx.xinwen.report.manage.impl;
 
 import com.deepoove.poi.data.ChartMultiSeriesRenderData;
 import com.deepoove.poi.data.ChartSingleSeriesRenderData;
@@ -7,7 +7,7 @@ import com.shenlx.xinwen.report.config.GenerateWordFactory;
 import com.shenlx.xinwen.report.enums.WordContentTypeEnum;
 import com.shenlx.xinwen.report.model.ChartSeriesRenderData;
 import com.shenlx.xinwen.report.model.LabelData;
-import com.shenlx.xinwen.report.service.GenerateWord;
+import com.shenlx.xinwen.report.manage.GenerateWord;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

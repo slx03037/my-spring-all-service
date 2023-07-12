@@ -1,7 +1,7 @@
 package com.shenlx.xinwen.report.config;
 
 import com.shenlx.xinwen.report.enums.WordContentTypeEnum;
-import com.shenlx.xinwen.report.service.GenerateWord;
+import com.shenlx.xinwen.report.manage.GenerateWord;
 
 import java.util.HashMap;
 import java.util.Map;
