@@ -24,4 +24,5 @@ public class WebSocketServerConfigure implements WebSocketConfigurer {
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(myStringWebSocketHandler, "/connect").withSockJS();
     }
+
 }

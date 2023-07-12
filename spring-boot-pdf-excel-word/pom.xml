@@ -9,6 +9,8 @@
         <module>spring-boot-word-poi</module>
         <module>spring-boot-word-poi-tl</module>
         <module>spring-boot-excel-easypoi</module>
+        <module>spring-boot-file-online</module>
+        <module>spring-boot-file-poi-tl-report</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
