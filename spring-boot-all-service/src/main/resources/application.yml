@@ -1,9 +1,0 @@
-
-server:
-  port: 8093
-
-spring:
-  application:
-    name: spring-boot-service
-  profiles:
-    active: test

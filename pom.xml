@@ -9,12 +9,6 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <modules>
-        <module>spring-boot-elasticsearch-service</module>
-        <module>spring-elasticsearch-service</module>
-        <module>spring-boot-all-service</module>
-    </modules>
-
     <groupId>com.shenlx.xinwen</groupId>
     <artifactId>spring-all-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -59,8 +53,8 @@
         <fastjson.version>1.2.76</fastjson.version>
         <nacos.config.version>0.2.7</nacos.config.version>
         <mybatis-plus-annotation>3.4.2</mybatis-plus-annotation>
-        <springfox-swagger2>2.8.0</springfox-swagger2>
-        <springfox-swagger-ui>2.9.2</springfox-swagger-ui>
+        <!--<springfox-swagger2>2.8.0</springfox-swagger2>-->
+        <!--<springfox-swagger-ui>2.9.2</springfox-swagger-ui>-->
         <pegdown.version>1.2.1</pegdown.version>
         <commons-io.version>2.5</commons-io.version>
         <commons-lang3.version>3.7</commons-lang3.version>
@@ -89,11 +83,11 @@
             <optional>true</optional>
         </dependency>
         <!--解决JDK 11 兼容性问题-->
-        <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-com.shenlx.xinwen.swagger2.api</artifactId>
-            <version>${jaxb-com.shenlx.xinwen.swagger2.api.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>javax.xml.bind</groupId>-->
+            <!--<artifactId>jaxb-com.shenlx.xinwen.swagger2.api</artifactId>-->
+            <!--<version>${jaxb-com.shenlx.xinwen.swagger2.api.version}</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <dependencyManagement>
@@ -143,11 +137,11 @@
                 <version>${druid.version}</version>
             </dependency>
             <!--valid验证参数-->
-            <dependency>
-                <groupId>jakarta.validation</groupId>
-                <artifactId>jakarta.validation-com.shenlx.xinwen.swagger2.api</artifactId>
-                <version>${valid.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>jakarta.validation</groupId>-->
+                <!--<artifactId>jakarta.validation-com.shenlx.xinwen.swagger2.api</artifactId>-->
+                <!--<version>${valid.version}</version>-->
+            <!--</dependency>-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
@@ -166,11 +160,11 @@
                 <version>${hutool.version}</version>
             </dependency>
             <!--Swagger-UI API文档生产工具-->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${springfox-swagger.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>io.springfox</groupId>-->
+                <!--<artifactId>springfox-boot-starter</artifactId>-->
+                <!--<version>${springfox-swagger.version}</version>-->
+            <!--</dependency>-->
             <!--解决Swagger访问主页时的NumberFormatException问题-->
             <!--<dependency>-->
                 <!--<groupId>io.swagger</groupId>-->
@@ -199,16 +193,16 @@
                 <version>${commons-codec.version}</version>
             </dependency>
             <!-- swagger2 集成-->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${springfox-swagger2}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${springfox-swagger-ui}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>io.springfox</groupId>-->
+                <!--<artifactId>springfox-swagger2</artifactId>-->
+                <!--<version>${springfox-swagger2}</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>io.springfox</groupId>-->
+                <!--<artifactId>springfox-swagger-ui</artifactId>-->
+                <!--<version>${springfox-swagger-ui}</version>-->
+            <!--</dependency>-->
             <dependency>
                 <groupId>org.pegdown</groupId>
                 <artifactId>pegdown</artifactId>
