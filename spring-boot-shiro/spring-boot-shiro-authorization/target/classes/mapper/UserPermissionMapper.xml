@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenlx.xinwen.dao.UserPermissionMapper">
+
+<resultMap type="com.shenlx.xinwen.domain.Permission" id="permission">
+   <id column="id" property="id" javaType="java.lang.Integer" jdbcType="NUMERIC"/>
+   <id column="url" property="url" javaType="java.lang.String" jdbcType="VARCHAR"/>
+   <id column="name" property="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+</resultMap>
+
+<select id="findByUserName" resultMap="permission">
+	select p.id,p.url,p.name from T_ROLE r
+	left join T_USER_ROLE ur on(r.id = ur.rid)
+	left join T_USER u on(u.id = ur.user_id)
+	left join T_ROLE_PERMISSION rp on(rp.rid = r.id)
+	left join T_PERMISSION p on(p.id = rp.pid )
+	where u.username = #{userName}
+</select>
+</mapper>

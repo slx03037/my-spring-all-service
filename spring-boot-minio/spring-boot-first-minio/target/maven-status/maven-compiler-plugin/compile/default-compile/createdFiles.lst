@@ -1,0 +1,10 @@
+com\shenlx\xinwen\minio\util\MinioBucketApi$2.class
+com\shenlx\xinwen\minio\Application.class
+com\shenlx\xinwen\minio\util\MinioObjectApi$2.class
+com\shenlx\xinwen\minio\util\MinioObjectApi.class
+com\shenlx\xinwen\minio\properties\MinioPropertiesConfig.class
+com\shenlx\xinwen\minio\config\MinIOConfig.class
+com\shenlx\xinwen\minio\util\MinioBucketApi$1.class
+com\shenlx\xinwen\minio\util\MinioBucketApi.class
+com\shenlx\xinwen\minio\util\MinioFileUtils.class
+com\shenlx\xinwen\minio\util\MinioObjectApi$1.class

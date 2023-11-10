@@ -1,0 +1,7 @@
+com\shenlx\xinwen\config\shiro\ShiroRealm.class
+com\shenlx\xinwen\util\MD5Utils.class
+com\shenlx\xinwen\config\ShiroConfig.class
+com\shenlx\xinwen\domain\User.class
+com\shenlx\xinwen\controller\UserController.class
+com\shenlx\xinwen\response\ResponseBo.class
+com\shenlx\xinwen\App.class

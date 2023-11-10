@@ -1,0 +1,10 @@
+com\shenlx\xinwen\springbootminio\Application.class
+com\shenlx\xinwen\springbootminio\model\UploadResponse.class
+com\shenlx\xinwen\springbootminio\utils\MinioUtil.class
+com\shenlx\xinwen\springbootminio\config\MinioProperties.class
+com\shenlx\xinwen\springbootminio\controller\TestController.class
+com\shenlx\xinwen\springbootminio\model\ResultData.class
+com\shenlx\xinwen\springbootminio\model\EnumInterface.class
+com\shenlx\xinwen\springbootminio\config\MinioConfig.class
+META-INF\spring-configuration-metadata.json
+com\shenlx\xinwen\springbootminio\model\ResultEnum.class
