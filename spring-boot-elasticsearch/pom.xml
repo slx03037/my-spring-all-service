@@ -17,6 +17,7 @@
 
     <modules>
         <module>spring-boot-elasticsearch-restClient</module>
+        <module>spring-boot-data-elasticsearch</module>
     </modules>
     <properties>
         <java.version>11</java.version>

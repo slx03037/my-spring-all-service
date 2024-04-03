@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+elasticsearch:
+ ## host: 192.168.2.78
+  host: 192.168.3.9
+  port: 9200

@@ -1,0 +1,6 @@
+com\shenlx\xinwen\xml\TestOrder.class
+com\shenlx\xinwen\xml\Order.class
+com\shenlx\xinwen\xml\OrderFactory.class
+com\shenlx\xinwen\xml\Address.class
+com\shenlx\xinwen\xml\Customer.class
+com\shenlx\xinwen\xml\Shipping.class

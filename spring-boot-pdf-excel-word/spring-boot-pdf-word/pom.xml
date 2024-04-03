@@ -19,11 +19,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-        <dependency>
-            <groupId> e-iceblue </groupId>
-            <artifactId>spire.office</artifactId>
-            <version>8.5.6</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId> e-iceblue </groupId>-->
+<!--            <artifactId>spire.office</artifactId>-->
+<!--            <version>8.5.6</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>

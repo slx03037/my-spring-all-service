@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding value-style="attribute">
+  <mapping class="com.shenlx.xinwen.xml.Address" name="address">
+    <value style="element" name="street1" field="street1" usage="optional"/>
+    <value style="element" name="street2" field="street2" usage="optional"/>
+    <value style="element" name="city" field="city" usage="optional"/>
+    <value style="element" name="state" field="state" usage="optional"/>
+    <value style="element" name="post-code" field="postCode" usage="optional"/>
+    <value style="element" name="country" field="country" usage="optional"/>
+  </mapping>
+  <mapping class="com.shenlx.xinwen.xml.Customer" name="customer">
+    <value name="customer-number" field="customerNumber"/>
+    <value style="element" name="first-name" field="firstName" usage="optional"/>
+    <value style="element" name="last-name" field="lastName" usage="optional"/>
+    <collection field="middleNames" usage="optional" factory="org.jibx.runtime.Utility.arrayListFactory"/>
+  </mapping>
+  <mapping class="com.shenlx.xinwen.xml.Order" name="order">
+    <value name="order-number" field="orderNumber"/>
+    <structure field="customer" usage="optional"/>
+    <structure field="bilTo" usage="optional"/>
+    <value style="element" name="shipping" field="shipping" usage="optional"/>
+    <structure field="shipTo" usage="optional"/>
+    <value name="total" field="total" usage="optional"/>
+  </mapping>
+  <mapping class="com.shenlx.xinwen.xml.Shipping" name="shipping"/>
+</binding>

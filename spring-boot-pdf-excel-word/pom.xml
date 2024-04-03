@@ -12,6 +12,7 @@
         <module>spring-boot-file-online</module>
         <module>spring-boot-file-poi-tl-report</module>
         <module>spring-boot-pdf-word</module>
+        <module>spring-boot-minio</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

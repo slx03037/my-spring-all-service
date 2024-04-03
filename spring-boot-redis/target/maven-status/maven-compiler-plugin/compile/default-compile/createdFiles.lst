@@ -1,7 +1,0 @@
-com\shenlx\xinwen\springbootredis\domain\User.class
-com\shenlx\xinwen\springbootredis\service\impl\UserServiceImpl.class
-com\shenlx\xinwen\springbootredis\mapper\UserMapper.class
-com\shenlx\xinwen\springbootredis\SpringBootRedisApplication.class
-com\shenlx\xinwen\springbootredis\service\UserService.class
-com\shenlx\xinwen\springbootredis\config\RedisConfig.class
-com\shenlx\xinwen\springbootredis\controller\UserController.class

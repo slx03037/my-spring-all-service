@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netty webSocket时间服务器</title>
+</head>
+<body>
+<br>
+    <script type="text/javascript">
+    var socket;
+    if(!window.WebSocket){
+        window.WebSocket=window.MozWebSocket;
+    }
+        //判断浏览器是否支持WebSocket
+    if(window.WebSocket){
+        // 进行握手链接
+        socket=new WebSocket("ws://127.0.0.1:8080/websocket");
+        //如果服务端有数据返回，可以进行展示
+        socket.onmessage=function(event){
+            var ta=document.getElementById('responseText');
+            ta.value="";
+            ta.value=event.data;
+            console.log(ta)
+        };
+        //说明链接正常，显示 服务器正常
+        socket.onopen= function(event){
+            var ta=document.getElementById('responseText');
+            ta.value="打开 WebSocket 服务正常，浏览器支持WebSocket!";
+        };
+        //如果服务器关闭，显示 WebSocket 关闭
+        socket.onclose=function(event){
+            var ta=document.getElementById('responseText');
+            ta.value="WebSocket 关闭!!";
+        };
+    }else{
+        alert("sorry,您的浏览器 不支持 WebSocket 协议! ");
+    }
+   function send(message){
+        if(!window.WebSocket){
+            return ;
+        }
+        if(socket.readyState==WebSocket.OPEN){
+            socket.send(message);
+        }else{
+            alert("WebSocket 连接没有建立成功!");
+        }
+    }
+</script>
+    <form onsubmit="return false;">
+        <input type="text" name="message" value="Netty learning WebSocket"/>
+        <br><br>
+        <input type="button" value=" 发送 WebSocket 请求消息 " onclick="send(this.form.message.value)"/>
+        <hr color="blue"/>
+        <h3> 服务端返回应答消息</h3>
+        <textarea id="responseText" style="width:500px;height:300px;"></textarea>
+    </form>
+</body>
+</html>

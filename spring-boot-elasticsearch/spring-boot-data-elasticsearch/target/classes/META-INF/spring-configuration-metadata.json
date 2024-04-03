@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "elasticsearch",
+      "type": "com.shenlx.xinwen.spring.boot.data.elasticsearch.config.ElasticProperties",
+      "sourceType": "com.shenlx.xinwen.spring.boot.data.elasticsearch.config.ElasticProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "elasticsearch.host",
+      "type": "java.lang.String",
+      "sourceType": "com.shenlx.xinwen.spring.boot.data.elasticsearch.config.ElasticProperties"
+    },
+    {
+      "name": "elasticsearch.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.shenlx.xinwen.spring.boot.data.elasticsearch.config.ElasticProperties"
+    }
+  ],
+  "hints": []
+}
