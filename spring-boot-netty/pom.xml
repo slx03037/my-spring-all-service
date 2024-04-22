@@ -19,6 +19,7 @@
         <module>spring-boot-netty-service</module>
         <module>spring-boot-netty-xml</module>
         <module>spring-boot-websocket-socket</module>
+        <module>spring-reactor</module>
     </modules>
 
     <properties>

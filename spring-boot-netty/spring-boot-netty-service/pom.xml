@@ -37,11 +37,11 @@
 <!--                </exclusion>-->
 <!--            </exclusions>-->
         </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.90.Final</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-all</artifactId>-->
+<!--            <version>4.1.90.Final</version>-->
+<!--        </dependency>-->
         <!--msgpack依赖-->
         <dependency>
             <groupId>org.msgpack</groupId>
@@ -134,7 +134,12 @@
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
-<!--        <dependency>-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.93.Final</version>
+        </dependency>
+        <!--        <dependency>-->
 <!--            <groupId>io.netty</groupId>-->
 <!--            <artifactId>netty-all</artifactId>-->
 <!--            <version>4.1.93.Final</version>-->
